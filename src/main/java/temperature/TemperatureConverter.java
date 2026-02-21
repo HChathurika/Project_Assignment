@@ -10,9 +10,12 @@ public class TemperatureConverter {
         return (celsius * 9.0 / 5.0) + 32;
     }
 
+    // NEW unit converter
+    public double kelvinToCelsius(double kelvin) {
+        return kelvin - 273.15;
+    }
+
     public boolean isExtremeTemperature(double celsius) {
         return celsius < -40 || celsius > 50;
     }
 }
-
-
