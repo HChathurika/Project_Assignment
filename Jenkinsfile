@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // Always checkout main
                 checkout([$class: 'GitSCM',
-                          branches: [[name: '*/main']],
+                          branches: [[name: '*/master']],
                           userRemoteConfigs: [[url: 'https://github.com/HChathurika/2ndYear_2ndSemester_Project_Assignment']]
                 ])
             }
